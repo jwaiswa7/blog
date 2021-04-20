@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :admin do 
+    resources :articles, except: %i[create new]  
+    root "articles#index"
+  end
   get "articles/mine", to: "articles#mine", as: :my_articles
   root "articles#index"
   resources :articles
