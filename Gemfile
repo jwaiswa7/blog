@@ -6,7 +6,7 @@ ruby '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -22,6 +22,11 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem "devise", "~> 4.7" # Flexible authentication solution for Rails
+gem "pg", "~> 1.2" # Pg is the Ruby interface to the PostgreSQL RDBMS
+gem "pundit", "~> 2.1" # Object oriented authorization for Rails applications
+
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -31,6 +36,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "rspec-rails", "~> 4.0" # rspec-rails is a testing framework for Rails 3+
+   gem "factory_bot_rails", "~> 5.2" # factory_bot is a fixtures replacement with a straightforward definition syntax, support for multiple build strategies
+  gem "faker", "~> 2.11" # A library for generating fake data such as names, addresses, and phone numbers
 end
 
 group :development do
