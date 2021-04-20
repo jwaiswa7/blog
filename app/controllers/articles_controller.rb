@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  # before_action :authenticate_user!, except: %i[index show]
+  before_action :authenticate_user!, only: :mine
   before_action :set_article, only: %i[show update edit destroy]
 
   def index
@@ -10,6 +10,7 @@ class ArticlesController < ApplicationController
 
   def mine
     @articles = current_user.articles
+    authorize @articles
   end
 
   def new
