@@ -29,12 +29,11 @@ gem 'pg', '~> 1.2' # Pg is the Ruby interface to the PostgreSQL RDBMS
 gem 'premailer-rails' # Uses style sheet and allows for email preview when developing
 gem 'pundit', '~> 2.1' # Object oriented authorization for Rails applications
 
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-# gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
