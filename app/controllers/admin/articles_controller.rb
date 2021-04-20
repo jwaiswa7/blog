@@ -1,9 +1,9 @@
-module Admin 
-    class ArticlesController < AdminController
+# frozen_string_literal: true
 
-        def index
-            @articles = Article.all
-        end
+module Admin
+  class ArticlesController < AdminController
+    def index
+      @articles = Article.all
     end
-    
+  end
 end
