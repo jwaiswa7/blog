@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, except: %i[index show]
+  # before_action :authenticate_user!, except: %i[index show]
   before_action :set_article, only: %i[show update edit destroy]
 
   def index
@@ -14,10 +14,12 @@ class ArticlesController < ApplicationController
 
   def new
     @article = current_user.articles.new
+    authorize @article
   end
 
   def create
     @article = Article.new(article_params)
+    authorize @article
     @article.user = current_user
     respond_to do |format|
       if @article.save
@@ -31,6 +33,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
+    authorize @article
     respond_to do |format|
       if @article.update(article_params)
         format.html { redirect_to article_path(@article), notice: 'article was successfully updated.' }
@@ -42,9 +45,12 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit
+    authorize @article
+  end
 
   def destroy
+    authorize @article
     @article.destroy
     respond_to do |format|
       format.html { redirect_to my_articles_path, notice: 'Article was successfully destroyed.' }
