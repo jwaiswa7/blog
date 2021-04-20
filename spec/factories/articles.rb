@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :article do
-    title { "MyString" }
-    sub_title { "MyString" }
-    details { "MyText" }
-    user { nil }
+    title { Faker::Lorem.sentence }
+    sub_title { Faker::Lorem.sentence }
+    details { Faker::Lorem.paragraph(sentence_count: 10) }
+    association :user, factory: :user
   end
 end
