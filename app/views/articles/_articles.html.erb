@@ -1,9 +1,14 @@
 <% articles.each do |article| %>
-<div>
-  <h1><%= article.title %> </h1>
-  <h3><%= article.sub_title%></h3>
-  <p><%= article.details %></p>
-  <p><%= article.user.name %></p>
-  <%= link_to "show", article_path(article) %>
+<div class="post-preview">
+   <%= link_to article_path(article) do %>
+      <h2 class="post-title"><%= article.title %></h2>
+      <h3 class="post-subtitle"><%= article.sub_title%></h3>
+   <% end %>
+   <p class="post-meta">
+      Posted by
+      <a href="#!"><%= article.user.name %></a>
+      on <%= article.created_at %>
+   </p>
 </div>
+<hr />
 <% end %>

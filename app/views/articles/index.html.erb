@@ -1,9 +1,11 @@
-<h1>Articles</h1>
-
 <% if current_user %>
-  <%= link_to "create article", new_article_path %>
-  <%= link_to "My articles", my_articles_path %>
+<%= link_to "create article", new_article_path %>
+<%= link_to "My articles", my_articles_path %>
 <% end %>
-
-<%= render 'articles', articles: @articles %>
-
+<div class="container">
+   <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+         <%= render 'articles', articles: @articles %>
+      </div>
+   </div>
+</div>
