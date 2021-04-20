@@ -1,0 +1,9 @@
+<% articles.each do |article| %>
+<div>
+  <h1><%= article.title %> </h1>
+  <h3><%= article.sub_title%></h3>
+  <p><%= article.details %></p>
+  <p><%= article.user.name %></p>
+  <%= link_to "show", article_path(article) %>
+</div>
+<% end %>

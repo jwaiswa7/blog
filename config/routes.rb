@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "articles/mine", to: "articles#mine", as: :my_articles
   root "articles#index"
   resources :articles
   devise_for :users
