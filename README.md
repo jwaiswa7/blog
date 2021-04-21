@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[x] Ruby version 2.7.1
+[x] Rails verion 6.0.3.6
+[x] Run `bundle install` to install dependencies
+[x] Ensure you have  postgress database up and running and set up your credentials in the `database.yml` file
+[x] Create database by running the command `rake db:create` and rake `db:migrate`
+[x] Run the command `rake db:seed` to dd seed data to the database
+[x] Run the command `rspec` to run the test suite
+[x] To start the application, run the command `rails s`, an application will be started on your local server and can be accesed at the location localhost:3000
 
-Things you may want to cover:
+Admin account: 
+```
+user: admin@gmail.com
+password: topsecret
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+User account: 
+```
+user0@gmail.com
+password: topsecret
+```
