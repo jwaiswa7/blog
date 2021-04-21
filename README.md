@@ -7,6 +7,7 @@
 * Create database by running the command `rake db:create` and rake `db:migrate`
 * Run the command `rake db:seed` to dd seed data to the database
 * Run the command `rspec` to run the test suite
+* Run `yarn install` to install packages
 * To start the application, run the command `rails s`, an application will be started on your local server and can be accesed at the location localhost:3000
 
 ### Authentication and Authorization
