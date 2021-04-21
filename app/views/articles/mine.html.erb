@@ -1,8 +1,8 @@
-<h1>My Articles</h1>
-
-<% if current_user %>
-  <%= link_to "create article", new_article_path %>
-<% end %>
-
-<%= render 'articles', articles: @articles %>
-
+<%= render 'shared/header', title: "My Articles", sub_title: "View my articles" %>
+<div class="container">
+   <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+         <%= render 'shared/articles', articles: @articles %>
+      </div>
+   </div>
+</div>
