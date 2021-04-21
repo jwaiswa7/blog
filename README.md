@@ -9,6 +9,9 @@
 * Run the command `rspec` to run the test suite
 * To start the application, run the command `rails s`, an application will be started on your local server and can be accesed at the location localhost:3000
 
+### Authentication and Authorization
+The (devise gem)[https://github.com/heartcombo/devise] has been used to handle uer authentication and (pundit)[https://github.com/varvet/pundit] has been used to handle user authorization. 
+
 Admin account: 
 ```
 user: admin@gmail.com
