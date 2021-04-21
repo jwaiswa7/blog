@@ -3,6 +3,7 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :articles, except: %i[create new]
+    resources :users, only: %i[index]
     root 'articles#index'
   end
   get 'articles/mine', to: 'articles#mine', as: :my_articles
