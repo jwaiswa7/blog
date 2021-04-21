@@ -10,7 +10,6 @@ class ArticlesController < ApplicationController
 
   def mine
     @articles = current_user.articles
-    authorize @articles
   end
 
   def new

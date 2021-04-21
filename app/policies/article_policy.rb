@@ -21,7 +21,7 @@ class ArticlePolicy < ApplicationPolicy
     end
 
     def mine?
-        record.user == user
+        records.user == user
     end
 
 end
