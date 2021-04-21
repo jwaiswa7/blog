@@ -1,0 +1,25 @@
+<%= form_for [:admin , article] do |f| %>
+<div class="control-group">
+   <div class="form-group floating-label-form-group controls">
+      <%= f.label :title %>
+      <%= f.text_field :title, autofocus: true, class: "form-control", placeholder: "Title" %>
+      <p class="help-block text-danger"></p>
+   </div>
+</div>
+<div class="control-group">
+   <div class="form-group floating-label-form-group controls">
+      <%= f.label :sub_title %>
+      <%= f.text_field :sub_title, class: "form-control", placeholder: "Sub title" %>
+      <p class="help-block text-danger"></p>
+   </div>
+</div>
+<div class="control-group">
+   <div class="form-group floating-label-form-group controls">
+      <%= f.label :details %>
+      <%= f.text_area :details, class: "form-control", placeholder: "Article information" %>
+      <p class="help-block text-danger"></p>
+   </div>
+</div>
+<br/>
+<%= f.submit "Submit", class: "btn btn-primary" %>
+<% end %>
