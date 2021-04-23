@@ -23,7 +23,6 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'rails_12factor'
 
 gem 'devise', '~> 4.7' # Flexible authentication solution for Rails
 gem 'pg', '~> 1.2' # Pg is the Ruby interface to the PostgreSQL RDBMS
@@ -35,6 +34,10 @@ gem 'pundit', '~> 2.1' # Object oriented authorization for Rails applications
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+
+group :production do
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
