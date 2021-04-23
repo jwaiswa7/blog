@@ -6794,6 +6794,13 @@ startbootstrap-clean-blog@^5.0.10:
     bootstrap "4.5.3"
     jquery "3.5.1"
 
+startbootstrap-sb-admin@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/startbootstrap-sb-admin/-/startbootstrap-sb-admin-6.0.2.tgz#9216971f14a3618ba27fca362b82b852027d95f4"
+  integrity sha512-1IyWwYLaoTNv6kLYRy6ZZzxQg5nh9HudDP0hMLCafq/a11IzSoKGUnUarM1hmRP0cglH+eEmMNz731A5CsbkEw==
+  dependencies:
+    bootstrap "4.5.3"
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/static-extend/-/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"

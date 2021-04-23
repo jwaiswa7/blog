@@ -4,7 +4,7 @@
       <title>Blog</title>
       <%= csrf_meta_tags %>
       <%= csp_meta_tag %>
-      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag 'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -15,7 +15,7 @@
    </head>
    <body>
       <!-- Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
          <div class="container">
             <%= link_to "Blog", root_path, class: "navbar-brand" %>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,5 +34,18 @@
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <%= yield %>
+      <footer class="py-4 bg-light mt-auto">
+         <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between small">
+               <div class="text-muted">Copyright &copy; Josh Blog 2021</div>
+               <div>
+                  <a href="#">Privacy Policy</a>
+                  &middot;
+                  <a href="#">Terms &amp; Conditions</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      </div>
    </body>
 </html>
