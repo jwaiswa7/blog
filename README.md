@@ -24,3 +24,9 @@ User account:
 user0@gmail.com
 password: topsecret
 ```
+
+### Video demo
+
+For  demo, please see the video below: 
+[![Watch the video](https://i9.ytimg.com/vi/x5U6g3rYI74/mqdefault.jpg)](https://www.youtube.com/watch?v=x5U6g3rYI74)
+
