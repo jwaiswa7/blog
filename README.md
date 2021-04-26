@@ -14,7 +14,7 @@
 The demo application has been hosted on heroku, please view it [here](https://whispering-crag-05006.herokuapp.com/)
 
 ### Authentication and Authorization
-The [devise gem](https://github.com/heartcombo/devise) has been used to handle uer authentication and [pundit](https://github.com/varvet/pundit) has been used to handle user authorization. 
+The [devise gem](https://github.com/heartcombo/devise) has been used to handle user authentication and [pundit](https://github.com/varvet/pundit) has been used to handle user authorization. 
 
 Admin account: 
 ```
